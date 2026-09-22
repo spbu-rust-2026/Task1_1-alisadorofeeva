@@ -4,7 +4,7 @@ fn main() {
     let mut string = String::new();
 
     io::stdin()
-        .read_line(&mut string)
+        .read_line()
         .expect("error");
     
     let mut numbers = string
@@ -14,13 +14,13 @@ fn main() {
         .next()
         .expect("error")
         .parse()
-        .expect("error");
+        .("error");
     
     let b: i64 = numbers
         .next()
         .expect("error")
         .parse()
-        .expect("error");
+        .("error");
     
     println!("{}", a+b);
 }
